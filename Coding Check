@@ -1,0 +1,17 @@
+ 1. In int brightnessSetting = 75;, identify the data type, variable name, and initial value. How would you change the value to 50?
+- The data type is int, the variable is called brightnessSetting, and its starting value is 75. If I want to make the value 50, I can assign 50 to the variable, so it would be brightnessSetting = 50;.
+
+2. Why is bool suitable for switchOn, while int is suitable for brightnessSetting?
+- bool works well for switchOn because the switch only has two possible conditions, either on or off which can be represented by true or false, while int is appropriate for brightnessSetting because the brightness can use whole numbers such as 0, 50, 75, or 100.
+
+3. Predict the output when brightnessSetting is 80 and switchOn is false.
+- The output would show "Brightness setting: 80" and "Lamp brightness: 0". Even though the brightness setting is 80, the actual lamp brightness becomes 0 because the switch is currently off.
+
+4. Are switchOn and switchon the same variable? Explain.
+- No, they are not the same variable. C++ is case-sensitive, so uppercase O and lowercase o are different. Therefore, switchOn and switchon would refer to two separate variable names.
+
+5. What values are passed to getLampBrightness(), and what does it return?
+- The function receives the values of switchOn and brightnessSetting. If switchOn is true, it gives back the current brightness setting. If switchOn is false, it returns 0 instead.
+
+6. If lampBrightness is declared inside setup(), can loop() access it directly? Explain.
+- No, loop() cannot use lampBrightness directly because it was created inside setup(). This makes it a local variable, so its use is limited to the function where it was declared. To make it available to both setup() and loop(), it should be declared outside those functions as a global variable.
