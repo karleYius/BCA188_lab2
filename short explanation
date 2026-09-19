@@ -1,0 +1,1 @@
+This lab demonstrates how the function controls the lamp brightness depending on whether the switch is on or off. If the switch is on, the lamp follows the given brightness setting, while if it is off, the lamp brightness becomes zero.
